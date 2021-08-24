@@ -37,6 +37,30 @@ li {
 }
 
 
+/* ---- BUTTONS ---- */
+
+.btn-light {
+    background-color: white;
+}
+
+.btn-light_effect:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #F7A835;
+    border-radius: 7px;
+    transition: 0.5s;
+    transform: scale(1.12);
+}
+
+.btn-light_effectLink {
+    background-color: #676461;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+
 /* MAIN NAVEGATION */
 
 .nav--container {
@@ -63,19 +87,6 @@ li {
     width: 900px;
     display: flex;
     justify-content: space-around;
-}
-
-.btn-light {
-    background-color: white;
-}
-
-.btn-light_effect:hover {
-    font-weight: bold;
-    color: white;
-    background-color: #F7A835;
-    border-radius: 10px;
-    transition: 0.5s;
-    transform: scale(1.12);
 }
 
 .nav--logo__size {
