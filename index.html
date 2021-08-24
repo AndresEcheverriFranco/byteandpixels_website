@@ -19,100 +19,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/stylesSass.css">
 
 </head>
 
 <body>
     <header>
-        <!-- <nav class="navbar navbar-expand-lg">
-            <div>
-                <div>
-                    <img src="img/BP_logo_initial.jpg" alt="Byte and Pixels">
-                </div>
-                <div>
-                    <div>
-                        <ul class="nav-links ">
-                            <li><a href="#topNav"><button type="button" class="btn btn-light">Home</button></a></li>
-                            <li><a href="#about-inside"><button type="button" class="btn btn-light">About Us</button></a></li>
-                            <li><a href="#product-inside"><button type="button" class="btn btn-light">Products</button></a></li>
-                            <li><a href="#resources-inside"><button type="button" class="btn btn-light">Resources</button></a></li>
-                            <li><a href="#port-inside"><button type="button" class="btn btn-light">Portfolio</button></a></li>
-                            <li><a href="#contact-inside"><button type="button" class="btn btn-light">Contact</button></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <ul class="nav-social ">
-                        <li class="nav-social_effect">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <img src="img/s_facebook_logo.png " alt="facebook">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://www.behance.net/" target="_blank">
-                                <img src=" img/s_behance_logo.png " alt="behance ">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://twitter.com/?lang=es" target="_blank">
-                                <img src="img/s_twiter_logo.png " alt="twitter">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://www.instagram.com/?hl=es" target="_blank">
-                                <img src="img/s_instagram_logo.png " alt="instagram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="img/" alt="Byte and Pixels"></a>
+        <div>
+            <nav class="navbar navbar-expand-xl navbar-light nav--container container-fluid ">
+                <a href="#topNav" class="navbar-brand"><img class="nav--logo__size " src="img/brand_logo_nav.png" alt="Byte and Pixels"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home1</a>
+                    <ul class="navbar-nav ms-auto text-center navbar-position_list">
+                        <!-- <li>
+                            <a class="nav-link active" aria-current="page" href="#topNav"><button type="button" class="btn btn-light_effect ">Home</button></a>
+                        </li> -->
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#about-inside"><button type="button" class="btn btn-light_effect">About Us</button></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#product-inside"><button type="button" class="btn btn-light_effect">Products</button></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#resources-inside"><button type="button" class="btn btn-light_effect">Resources</button></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#port-inside"><button type="button" class="btn btn-light_effect">Portfolio</button></a>
+                        </li>
+                        <li>
+                            <a class="nav-link active" aria-current="page" href="#contact-inside"><button type="button" class="btn btn-light_effect">Contact</button></a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-
+            </nav>
+        </div>
     </header>
     <main>
         <div class="grid-container-index ">
             <div class="topNav " id="topNav"></div>
-
-            <div class="intro intro_effect">
-                <img src="img/intro_bytepixels_xl.svg" width="700px" alt="Byte & Pixels - Easier Web Solutions ">
+            <div class="intro">
+                <img src="img/intro_easier_web_solutions.svg" alt="Byte & Pixels - Easier Web Solutions ">
             </div>
 
-            <div class=".about-inside" id="about-inside"></div>
+            <div class="about-inside" id="about-inside"></div>
             <div class=" aboutPic ">
-                <div><img src=" img/about_us_1.jpg " alt="About Us " id="img "></div>
+                <div><img src=" img/about_us_1.jpg" class="img-fluid" alt="About Us " id="img "></div>
             </div>
-            <div class="aboutTitle aboutTitle_img "><img src="img/who_we_are_photo.png " alt="Who We Are "></div>
+            <div class="aboutTitle aboutTitle_img "><img src="img/intro_who_we_are.svg" class="img-fluid" alt="Who We Are "></div>
             <div class="aboutText ">
                 <h1> The statement reveals what the company does, how it does it, and why it does it. Prospective investors may also refer to the mission in the next level. Checking if it works.
                 </h1>
             </div>
             <div class="aboutLink ">
-                <button type="button " class="btn btn-warning "><a href=" about_us.html ">GO TO ABOUT US</a></button>
+                <button type="button " class="btn  btn-light_effect "><a href=" about_us.html ">GO TO ABOUT US</a></button>
             </div>
 
             <div class="product-inside" id="product-inside"></div>
@@ -130,7 +90,6 @@
             </div>
 
             <div class="resources-inside" id="resources-inside"></div>
-
             <div class="resPhoto ">
                 <img src="img/resources_1.jpg " alt="Resources ">
             </div>
@@ -155,6 +114,7 @@
             <div class="portLink ">
                 <button type="button " class="btn btn-warning "><a href="portfolio.html ">GO TO PORTFOLIO</a></button>
             </div>
+
             <div class="contact-space">
                 <label class="form-label">Your name or company´s name</label>
                 <div class="row">
@@ -204,8 +164,8 @@
             <div class="contText ">
                 <h1>Business Contact Information - business-related contact information disclosed by Licensee to IBM, including names, job titles.</h1>
             </div>
-
     </main>
+    </div>
 
     <footer>
         <div>
@@ -213,38 +173,35 @@
         </div>
         <div>
             <div>
-                <ul class="nav-social ">
-                    <li>
-                        <a href="https://www.facebook.com/ " target="_blank ">
-                            <img src="img/s_facebook_logo.png " alt="facebook ">
+                <ul class="nav--social ">
+                    <li class="nav--social__effect">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="img/s_facebook_logo.png " alt="facebook">
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.behance.net/ " target="_blank ">
+                    <li class="nav--social__effect">
+                        <a href="https://www.behance.net/" target="_blank">
                             <img src=" img/s_behance_logo.png " alt="behance ">
                         </a>
                     </li>
-                    <li>
-                        <a href="https://twitter.com/?lang=es " target="_blank ">
-                            <img src="img/s_twiter_logo.png " alt="twitter ">
+                    <li class="nav--social__effect">
+                        <a href="https://twitter.com/?lang=es" target="_blank">
+                            <img src="img/s_twiter_logo.png " alt="twitter">
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.instagram.com/?hl=es " target="_blank ">
-                            <img src="img/s_instagram_logo.png " alt="instagram ">
+                    <li class="nav--social__effect">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank">
+                            <img src="img/s_instagram_logo.png " alt="instagram">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
-    </div>
-    <!-- <script src="js/bootstrap.min.js "></script> -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <!-- <script src="js/wow.min.js"></script> -->
-    <!-- <script>
-        new WOW().init();
-    </script> -->
+
 </body>
 
 </html>

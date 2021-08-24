@@ -17,47 +17,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cssBootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div>
-            <nav class="nav-container topNav">
-                <div style="padding-left: 70px;">
-                    <img src="img/BP_logo_initial.jpg" alt="Byte and Pixels">
-                </div>
-                <p>||</p>
-                <div>
-                    <ul class="nav-links ">
+            <nav class="navbar navbar-expand-xl navbar-light nav--container container-fluid ">
+                <a href="index.html" class="navbar-brand"><img class="nav--logo__size " src="img/brand_logo_nav.png" alt="Byte and Pixels"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center navbar-position_list">
                         <li>
-                            <a href="index.html"><button type=" button " class="btn btn-light ">Back to Home</button></a>
-                        </li>
-                    </ul>
-                </div>
-                <p>||</p>
-                <div>
-                    <ul class="nav-social ">
-                        <li class="nav-social_effect">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <img src="img/s_facebook_logo.png " alt="facebook">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://www.behance.net/" target="_blank">
-                                <img src=" img/s_behance_logo.png " alt="behance ">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://twitter.com/?lang=es" target="_blank">
-                                <img src="img/s_twiter_logo.png " alt="twitter">
-                            </a>
-                        </li>
-                        <li class="nav-social_effect">
-                            <a href="https://www.instagram.com/?hl=es" target="_blank">
-                                <img src="img/s_instagram_logo.png " alt="instagram">
-                            </a>
+                            <a class="nav-link active" aria-current="page" href="index.html"><button type="button" class="btn btn-light_effect "> <<< Back to Home</button></a>
                         </li>
                     </ul>
                 </div>
