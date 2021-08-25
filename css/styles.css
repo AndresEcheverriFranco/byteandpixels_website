@@ -346,3 +346,51 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+/* ----  MEDIA QUERIES ---- */
+
+
+/*  481 to 575 */
+
+@media screen and (max-width:575px) {
+    .grid-container-index {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(22, 15rem);
+        grid-template-areas: "topNav" "intro" "aboutTitle" "aboutPic" "aboutText" "aboutLink" "prodTitle" "prodPhoto" "prodText" "prodLink" "resTitle" "resPhoto""resText" "resLink" "portTitle" "portPhoto" "portText" "portLink" "contTitle" "contPhoto" "contText" "footer"
+    }
+    .intro {
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+
+/*  576 to 768 */
+
+@media screen and (max-width:768px) {}
+
+
+/*  769 to 992 */
+
+@media screen and (max-width:992px) {}
+
+
+/*  993 to 1200 */
+
+@media screen and (max-width:1200px) {}
+
+
+/*  1201 to 1400 */
+
+@media screen and (max-width:1400px) {}
+
+
+/*  1401 ahead */
+
+@media screen and (max-width:1920px) {}
