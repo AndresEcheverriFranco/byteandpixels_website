@@ -117,15 +117,51 @@
     
     .nav--social {
         width: 25rem;
-        margin-right: 7rem;
+        margin-right: 1rem;
         display: flex;
         justify-content: space-between;
         transition: all 300ms;
     }
     
+    .nav--social img {
+        height: 2rem;
+    }
+    
+    .nav--social li {
+        padding-left: 6rem;
+    }
+    
     .nav--social__effect a img:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         transition: 0.5s;
+    }
+    
+    .navbar-toggler {
+        color: var(--white);
+        background: none;
+        border: none;
+        font-size: 2rem;
+    }
+    
+    @media (max-width:768px) {
+        body {
+            background-color: gainsboro;
+        }
+        .navbar {
+            background-color: rgb(130, 41, 41);
+            height: 8rem;
+        }
+        .navbar ul {
+            background-color: #fff;
+            margin-top: 0;
+        }
+        .nav--logo__size {
+            width: 26rem;
+            padding: 0 0 0 1rem;
+        }
+        .nav--container {
+            padding-left: 0;
+        }
     }
     /* ---- COMPLETE GRID INDEX ---- */
     
@@ -140,7 +176,7 @@
     
     .topNav {
         grid-area: topNav;
-        width: 100vw;
+        max-width: 100%;
         height: 8rem;
     }
     
@@ -159,6 +195,7 @@
     
     .ab-inside {
         grid-area: ab-inside;
+        max-width: 100%;
     }
     
     .abPhoto {
@@ -200,7 +237,7 @@
     
     .prod-inside {
         grid-area: prod-inside;
-        width: 100vw;
+        max-width: 100%;
     }
     
     .prodPhoto {
@@ -245,7 +282,7 @@
     
     .res-inside {
         grid-area: res-inside;
-        width: 100vw;
+        max-width: 100%;
     }
     
     .resPhoto {
@@ -285,7 +322,7 @@
     
     .port-inside {
         grid-area: port-inside;
-        width: 100vw;
+        max-width: 100%;
     }
     
     .portPhoto {
@@ -323,7 +360,7 @@
     
     .cont-inside {
         grid-area: cont-inside;
-        width: 100vw;
+        max-width: 100%;
     }
     
     .contPhoto {
@@ -434,6 +471,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: sticky;
     }
     /* ----  MEDIA QUERIES ---- */
     /*  481 to 575 */
