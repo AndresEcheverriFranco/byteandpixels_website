@@ -1,396 +1,385 @@
-/* GENERAL SETUPS*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.8rem;
-    line-height: 3.3rem;
-}
-
-h2 {
-    font-family: 'Antic Didone', serif;
-    font-size: 1rem
-}
-
-p {
-    font-family: 'Quicksand', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(40, 37, 37);
-}
-
-li {
-    list-style: none;
-}
-
-
-/* ---- BUTTONS ---- */
-
-.btn-light {
-    background-color: white;
-}
-
-.btn-light_effect:hover {
-    font-weight: bold;
-    color: white;
-    background-color: #F7A835;
-    border-radius: 7px;
-    transition: 0.5s;
-    transform: scale(1.12);
-}
-
-.btn-light_effectLink {
-    background-color: #676461;
-    border-radius: 6px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-}
-
-
-/* MAIN NAVEGATION */
-
-.nav--container {
-    position: fixed;
-    height: 90px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Quicksand', sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-
-.nav--container a {
-    color: rgb(97, 97, 97);
-}
-
-.navbar-position_list {
-    padding-right: 100px;
-}
-
-.nav--links {
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav--logo__size {
-    width: 18rem;
-    padding-left: 100px;
-}
-
-.nav--social {
-    width: 250px;
-    margin-right: 70px;
-    display: flex;
-    justify-content: space-between;
-    transition: all 300ms;
-}
-
-.nav--social__effect a img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-
-/* ---- COMPLETE GRID INDEX ---- */
-
-.grid-container-index {
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 90px 680px 90px 340px 340px 90px 380px 300px 90px 240px 240px 200px 90px 280px 400px 0px 300px 290px 110px;
-    grid-template-areas: "topNav topNav topNav topNav topNav topNav""intro intro intro intro intro intro" "about-inside about-inside about-inside about-inside about-inside about-inside" "aboutPic aboutPic aboutPic aboutTitle aboutTitle aboutTitle" "aboutPic aboutPic aboutPic aboutText aboutText aboutLink" "product-inside product-inside product-inside product-inside product-inside product-inside""prodTitle prodTitle prodText prodText prodPhoto prodPhoto" "prodLink prodLink prodText prodText prodPhoto prodPhoto" "resources-inside resources-inside resources-inside resources-inside resources-inside resources-inside""resTitle resTitle resTitle resTitle resTitle resTitle" "resLink resText resText resText resText resText" "resPhoto resPhoto resPhoto resPhoto resPhoto resPhoto" "port-inside port-inside port-inside port-inside port-inside port-inside""portTitle portTitle portTitle portTitle portText portText" "portPhoto portPhoto portPhoto portLink portText portText" "contact-inside contact-inside contact-inside contact-inside contact-inside contact-inside" "contact-space contact-space contTitle contTitle contTitle contTitle" "contact-space contact-space contText contText contPhoto contPhoto" "footer footer footer footer footer footer"
-}
-
-
-/* ---- 1. SECTION INTRO INDEX ---- */
-
-.topNav {
-    grid-area: topNav;
-    width: 100vw;
-    height: 80px;
-}
-
-.intro {
-    grid-area: intro;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro img {
-    width: 800px
-}
-
-
-/* ---- 2. SECTION ABOUT US INDEX---- */
-
-.about-inside {
-    grid-area: about-inside;
-    width: 100vw;
-}
-
-.aboutPic {
-    grid-area: aboutPic;
-}
-
-.aboutPic {
-    padding-top: 130px;
-    max-width: 800px;
-}
-
-.aboutTitle {
-    grid-area: aboutTitle;
-    padding-top: 60px;
-    max-width: 400px;
-}
-
-.aboutText {
-    grid-area: aboutText;
-    padding: 60px 50px 0 30px;
-    font-size: 1.6rem;
-    line-height: 2;
-}
-
-.aboutLink {
-    grid-area: aboutLink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 150px;
-}
-
-
-/* ---- 3. SECTION PRODUCT INDEX---- */
-
-.product-inside {
-    grid-area: product-inside;
-    width: 100vw;
-}
-
-.prodPhoto {
-    grid-area: prodPhoto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.prodTitle {
-    grid-area: prodTitle;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-top: 240px;
-    padding-left: 100px;
-}
-
-.prodText {
-    grid-area: prodText;
-    padding: 200px 100px 0 90px;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    line-height: 2;
-}
-
-.prodLink {
-    grid-area: prodLink;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 30px;
-}
-
-
-/* ---- 4. SECTION RESOURCES INDEX---- */
-
-.resources-inside {
-    grid-area: resources-inside;
-    width: 100vw;
-}
-
-.resPhoto {
-    grid-area: resPhoto;
-    padding-top: 22px;
-}
-
-.resTitle {
-    grid-area: resTitle;
-    position: relative;
-    max-width: 900px;
-    padding-top: 75px;
-    padding-left: 550px;
-}
-
-.resText {
-    grid-area: resText;
-    font-size: 1.6rem;
-    padding: 2rem 5rem 0 5rem;
-    line-height: 2;
-}
-
-.resLink {
-    grid-area: resLink;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
-    padding-bottom: 70px;
-}
-
-
-/* ---- 5. SECTION PORTFOLIO INDEX---- */
-
-.port-inside {
-    grid-area: port-inside;
-    width: 100vw;
-}
-
-.portPhoto {
-    grid-area: portPhoto;
-    display: flex;
-}
-
-.portTitle {
-    grid-area: portTitle;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    max-width: 900px;
-    padding: 70px 0 0 100px;
-}
-
-.portText {
-    grid-area: portText;
-    font-size: 1.6rem;
-    padding: 200px 70px 0 50px;
-    line-height: 2;
-}
-
-.portLink {
-    grid-area: portLink;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 150px;
-}
-
-
-/* ---- 6. SECTION CONTACT INDEX---- */
-
-.contact-inside {
-    grid-area: contact-inside;
-    width: 100vw;
-}
-
-.contPhoto {
-    grid-area: contPhoto;
-    display: flex;
-}
-
-.contTitle {
-    grid-area: contTitle;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    padding-top: 80px;
-    padding-right: 400px;
-}
-
-.contTitle img {
-    padding-top: 70px;
-    padding-left: 100px;
-}
-
-.contText {
-    grid-area: contText;
-    font-size: 1.6rem;
-    padding: 10px 30px 0 120px;
-    line-height: 2;
-}
-
-.contact-space {
-    grid-area: contact-space;
-    padding: 70px 80px 460px 70px;
-    margin: 130px 10px 0 100px;
-    background-color: #f7f7f7;
-    border-radius: 20px;
-}
-
-
-/* ---- FOOTER ---- */
-
-footer {
-    grid-area: footer;
-    height: 90px;
-    background-image: linear-gradient(to left, rgb(2, 2, 2), rgb(56, 53, 53), rgb(22, 21, 21));
-    color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* ----  MEDIA QUERIES ---- */
-
-
-/*  481 to 575 */
-
-@media screen and (max-width:575px) {
-    .grid-container-index {
-        background-color: white;
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: repeat(22, 15rem);
-        grid-template-areas: "topNav" "intro" "aboutTitle" "aboutPic" "aboutText" "aboutLink" "prodTitle" "prodPhoto" "prodText" "prodLink" "resTitle" "resPhoto""resText" "resLink" "portTitle" "portPhoto" "portText" "portLink" "contTitle" "contPhoto" "contText" "footer"
+    /* GENERAL SETUPS*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+     :root {
+        --primary: #F39200;
+        --secondary: #808080;
+        --white: #ffffff;
+        --black: #000000;
+        --gray: #D1D1D1;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+    }
+    
+    h2 {
+        font-family: 'Antic Didone', serif;
+        font-size: 1rem
+    }
+    
+    p {
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(40, 37, 37);
+    }
+    
+    li {
+        list-style: none;
+    }
+    /* ---- BUTTONS ---- */
+    /*     
+    .prueba {
+        width: 190.45rem;
+        background-color: rgb(186, 183, 183);
+    } */
+    
+    .btn {
+        font-size: 1.7rem;
+    }
+    
+    .btn-light {
+        background-color: var(--white);
+    }
+    
+    .btn-light_effect:hover {
+        font-weight: bold;
+        color: var(--white);
+        background-color: var(--primary);
+        border-radius: 0.7rem;
+        transition: 0.5s;
+        transform: scale(1.12);
+    }
+    
+    .btn-light_effectLink {
+        background-color: var(--secondary);
+        border-radius: 0.6rem;
+        color: var(--white);
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+    /* MAIN NAVEGATION */
+    
+    .nav--container {
+        position: fixed;
+        height: 9rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Quicksand', sans-serif;
+        background-color: var(--white);
+    }
+    
+    .nav--container a {
+        color: var(--secondary);
+    }
+    
+    .navbar-position_list {
+        padding-right: 10rem;
+    }
+    
+    .nav--links {
+        width: 90rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav--logo__size {
+        width: 29rem;
+        padding-left: 10rem;
+    }
+    
+    .nav--social {
+        width: 25rem;
+        margin-right: 7rem;
+        display: flex;
+        justify-content: space-between;
+        transition: all 300ms;
+    }
+    
+    .nav--social__effect a img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    /* ---- COMPLETE GRID INDEX ---- */
+    
+    .grid-container-index {
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 9rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 30rem 28rem 11rem;
+        grid-template-areas: "topNav topNav topNav topNav topNav topNav""intro intro intro intro intro intro" "ab-inside ab-inside ab-inside ab-inside ab-inside ab-inside" "abPhoto abPhoto abPhoto abTitle abTitle abTitle" "abPhoto abPhoto abPhoto abText abText abLink" "prod-inside prod-inside prod-inside prod-inside prod-inside prod-inside""prodTitle prodTitle prodText prodText prodPhoto prodPhoto" "prodLink prodLink prodText prodText prodPhoto prodPhoto" "res-inside res-inside res-inside res-inside res-inside res-inside""resTitle resTitle resTitle resTitle resTitle resTitle" "resLink resText resText resText resText resText" "resPhoto resPhoto resPhoto resPhoto resPhoto resPhoto" "port-inside port-inside port-inside port-inside port-inside port-inside""portTitle portTitle portTitle portTitle portText portText" "portPhoto portPhoto portPhoto portLink portText portText" "cont-inside cont-inside cont-inside cont-inside cont-inside cont-inside" "cont-space cont-space contTitle contTitle contPhoto contPhoto" "cont-space cont-space contText contText contPhoto contPhoto" "footer footer footer footer footer footer"
+    }
+    /* ---- 1. SECTION INTRO INDEX ---- */
+    
+    .topNav {
+        grid-area: topNav;
+        width: 100vw;
+        height: 8rem;
+    }
+    
     .intro {
-        width: 30rem;
+        grid-area: intro;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
-}
-
-
-/*  576 to 768 */
-
-@media screen and (max-width:768px) {}
-
-
-/*  769 to 992 */
-
-@media screen and (max-width:992px) {}
-
-
-/*  993 to 1200 */
-
-@media screen and (max-width:1200px) {}
-
-
-/*  1201 to 1400 */
-
-@media screen and (max-width:1400px) {}
-
-
-/*  1401 ahead */
-
-@media screen and (max-width:1920px) {}
+    
+    .intro img {
+        width: 80rem;
+        margin-top: 20rem;
+    }
+    /* ---- 2. SECTION ABOUT US INDEX---- */
+    
+    .ab-inside {
+        grid-area: ab-inside;
+    }
+    
+    .abPhoto {
+        grid-area: abPhoto;
+    }
+    
+    .abPhoto img {
+        padding-top: 13rem;
+        max-width: 80rem;
+        margin-top: 6rem;
+    }
+    
+    .abTitle {
+        grid-area: abTitle;
+        margin-top: 6rem;
+        padding-top: 6rem;
+        max-width: 40rem;
+    }
+    
+    .abText {
+        grid-area: abText;
+        padding: 6rem 5rem 0 3rem;
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+    
+    .abLink {
+        grid-area: abLink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15rem;
+    }
+    /* ---- 3. SECTION PRODUCT INDEX---- */
+    
+    .prod-inside {
+        grid-area: prod-inside;
+        width: 100vw;
+    }
+    
+    .prodPhoto {
+        grid-area: prodPhoto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 7rem;
+    }
+    
+    .prodTitle {
+        grid-area: prodTitle;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-top: 24rem;
+        padding-left: 10rem;
+    }
+    
+    .prodText {
+        grid-area: prodText;
+        padding: 20rem 10rem 0 9rem;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+    
+    .prodLink {
+        grid-area: prodLink;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 3rem;
+        margin-top: 7rem;
+    }
+    /* ---- 4. SECTION RESOURCES INDEX---- */
+    
+    .res-inside {
+        grid-area: res-inside;
+        width: 100vw;
+    }
+    
+    .resPhoto {
+        grid-area: resPhoto;
+        padding-top: 2.2rem;
+    }
+    
+    .resTitle {
+        grid-area: resTitle;
+        position: relative;
+        max-width: 80rem;
+        margin-top: 4rem;
+        padding-top: 7.5rem;
+        padding-left: 55rem;
+    }
+    
+    .resText {
+        grid-area: resText;
+        font-size: 1.6rem;
+        padding: 2rem 50rem 0 20rem;
+        margin-top: 6rem;
+    }
+    
+    .resLink {
+        grid-area: resLink;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2rem;
+        padding-bottom: 7rem;
+    }
+    /* ---- 5. SECTION PORTFOLIO INDEX---- */
+    
+    .port-inside {
+        grid-area: port-inside;
+        width: 100vw;
+    }
+    
+    .portPhoto {
+        grid-area: portPhoto;
+        display: flex;
+    }
+    
+    .portTitle {
+        grid-area: portTitle;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        max-width: 80rem;
+        padding: 6rem 0 0 17rem;
+    }
+    
+    .portText {
+        grid-area: portText;
+        font-size: 1.6rem;
+        padding: 26rem 8rem 0 0;
+    }
+    
+    .portLink {
+        grid-area: portLink;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 15rem;
+    }
+    /* ---- 6. SECTION CONTACT INDEX---- */
+    
+    .cont-inside {
+        grid-area: cont-inside;
+        width: 100vw;
+    }
+    
+    .contPhoto {
+        grid-area: contPhoto;
+    }
+    
+    .contPhoto img {
+        width: 60rem;
+        margin-top: 10rem;
+        padding-left: 2rem;
+    }
+    
+    .contTitle {
+        grid-area: contTitle;
+        padding-top: 10.5rem;
+        padding-left: 8rem;
+        max-width: 50rem;
+    }
+    
+    .contText {
+        grid-area: contText;
+        font-size: 1.6rem;
+        padding: 9rem 3rem 0 8rem;
+    }
+    
+    .cont-space {
+        grid-area: cont-space;
+        background-color: var(--white);
+        border-radius: 2rem;
+    }
+    /* ---- FOOTER ---- */
+    
+    footer {
+        grid-area: footer;
+        height: 9rem;
+        background-image: linear-gradient(to left, rgb(2, 2, 2), rgb(56, 53, 53), rgb(22, 21, 21));
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* ----  MEDIA QUERIES ---- */
+    /*  481 to 575 */
+    
+    @media screen and (max-width:575px) {
+        .grid-container-index {
+            background-color: var(--white);
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: repeat(22, 15rem);
+            grid-template-areas: "topNav" "intro" "aboutTitle" "aboutPic" "aboutText" "aboutLink" "prodTitle" "prodPhoto" "prodText" "prodLink" "resTitle" "resPhoto""resText" "resLink" "portTitle" "portPhoto" "portText" "portLink" "contTitle" "contPhoto" "contText" "footer"
+        }
+        .intro {
+            width: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+    /*  576 to 768 */
+    
+    @media screen and (max-width:768px) {}
+    /*  769 to 992 */
+    
+    @media screen and (max-width:992px) {}
+    /*  993 to 1200 */
+    
+    @media screen and (max-width:1200px) {}
+    /*  1201 to 1400 */
+    
+    @media screen and (max-width:1400px) {}
+    /*  1401 ahead */
+    
+    @media screen and (max-width:1920px) {}

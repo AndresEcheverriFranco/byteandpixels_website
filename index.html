@@ -33,19 +33,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center navbar-position_list">
                         <li>
-                            <a class="nav-link active" aria-current="page" href="#about-inside"><button type="button" class="btn btn-light_effect">Company</button></a>
+                            <a class="nav-link active" aria-current="page" href="#ab-inside"><button type="button" class="btn btn-light_effect">Company</button></a>
                         </li>
                         <li>
-                            <a class="nav-link active" aria-current="page" href="#product-inside"><button type="button" class="btn btn-light_effect">Products</button></a>
+                            <a class="nav-link active" aria-current="page" href="#prod-inside"><button type="button" class="btn btn-light_effect">Products</button></a>
                         </li>
                         <li>
-                            <a class="nav-link active" aria-current="page" href="#resources-inside"><button type="button" class="btn btn-light_effect">Resources</button></a>
+                            <a class="nav-link active" aria-current="page" href="#res-inside"><button type="button" class="btn btn-light_effect">Resources</button></a>
                         </li>
                         <li>
                             <a class="nav-link active" aria-current="page" href="#port-inside"><button type="button" class="btn btn-light_effect">Portfolio</button></a>
                         </li>
                         <li>
-                            <a class="nav-link active" aria-current="page" href="#contact-inside"><button type="button" class="btn btn-light_effect">Contact</button></a>
+                            <a class="nav-link active" aria-current="page" href="#cont-inside"><button type="button" class="btn btn-light_effect">Contact</button></a>
                         </li>
                     </ul>
                 </div>
@@ -61,22 +61,22 @@
 
             <!-- ++++++  ABOUT US ++++++ -->
 
-            <div class="about-inside" id="about-inside"></div>
-            <div class=" aboutPic ">
+            <div class="ab-inside" id="ab-inside"></div>
+            <div class=" abPhoto">
                 <div><img src="img/about_us_photo.png" class="img-fluid" alt="About Us " id="img "></div>
             </div>
-            <div class="aboutTitle aboutTitle_img "><img src="img/intro_who_we_are_lg.svg" class="img-fluid" alt="Who We Are "></div>
-            <div class="aboutText ">
+            <div class="abTitle "><img src="img/intro_who_we_are_lg.svg" class="img-fluid" alt="Who We Are "></div>
+            <div class="abText ">
                 <h1> The statement reveals what the company does, how it does it, and why it does it. Prospective investors may also refer to the mission in the next level. Checking if it works.
                 </h1>
             </div>
-            <div class="aboutLink ">
+            <div class="abLink ">
                 <button type="button" class="btn"></button><a href=" about_us.html" class="btn  btn-light_effect btn-light_effectLink"> + Company >> </a></button>
             </div>
 
             <!-- ++++++  PRODUCTS ++++++ -->
 
-            <div class="product-inside" id="product-inside"></div>
+            <div class="prod-inside" id="prod-inside"></div>
             <div class="prodPhoto ">
                 <img src="img/products_photo.png" class="img-fluid" alt="Products ">
             </div>
@@ -84,7 +84,8 @@
                 <img src="img/intro_what_we_offer.svg" class="img-fluid" alt="What We Offer ">
             </div>
             <div class="prodText ">
-                <h1>The Company has not disclosed, delivered or licensed to any person or agreed or obligated itself to disclose, deliver or license to any person.</h1>
+                <h1>The Company has not disclosed, delivered or licensed to any person or agreed or obligated itself to disclose, deliver or license to any person. The Company has not disclosed, delivered or licensed to any person or agreed or obligated itself
+                    to disclose, deliver or license to any person</h1>
             </div>
             <div class="prodLink ">
                 <button type="button " class="btn"><a href="products.html" class="btn  btn-light_effect btn-light_effectLink" > + Products >> </a></button>
@@ -92,7 +93,7 @@
 
             <!-- ++++++  RESOURCES ++++++ -->
 
-            <div class="resources-inside" id="resources-inside"></div>
+            <div class="res-inside" id="res-inside"></div>
             <div class="resPhoto ">
                 <img src="img/resources_photo.png" alt="Resources " class="img-fluid">
             </div>
@@ -122,7 +123,7 @@
 
             <!-- ++++++  CONTACT FORM ++++++ -->
 
-            <!-- <div class="contact-space">
+            <div class="cont-space">
                 <label class="form-label">Your name or company´s name</label>
                 <div class="row">
                     <div class="col">
@@ -132,51 +133,43 @@
                         <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
                 </div>
-                <br> 
-            <form class="row g-2">
-                    <div class="col-md-12">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email address">
+                <br>
+                <section class="contact-form">
+                    <h4>Contact us</h4>
+                    <label for="name">Name</label>
+                    <input class="controls-form" type="text" name="name" id="name" placeholder="Your name">
+                    <label for="lastname">Last Name</label>
+                    <input class="controls-form" type="text" name="last name" id="last name" placeholder="Your last name">
+                    <label for="phone">Phone</label>
+                    <input class="controls-form" type="tel" name="phone" id="phone" placeholder="Your number">
+                    <label for="email">Email</label>
+                    <input class="controls-form" type="email" name="mail" id="mail" placeholder="Your Email">
+                    <textarea name="messages" placeholder="Type your message here"></textarea>
+                    <input type="checkbox">
+                    <label for=""> I agree sharing my information with Byte and Pixels</label>
+                    <div class="button-design">
+                        <input class=" form-buttons" type="submit " value="Send " id="form-butt">
+                        <input type="reset" value="Clear" id="form-butt">
                     </div>
 
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Your address">
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Your city">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-warning">Sign in</button>
-                    </div>
-                </form> -->
+                </section>
 
 
-        </div>
+            </div>
 
-        <!-- ++++++  CONTACT ++++++ -->
+            <!-- ++++++  CONTACT ++++++ -->
 
-        <div class="contact-inside" id="contact-inside"></div>
-        <div class="contPhoto "><img src="img/contact_photo.png" alt=" " class="img-fluid"></div>
-        <div class="contTitle "><img src="img/intro_wanna_work_with_us.svg" alt="Wanna Work With US " class="img-fluid"></div>
-        <div class="contText ">
-            <h1>Business Contact Information - business-related contact information disclosed by Licensee to IBM, including names, job titles.</h1>
-        </div>
+            <div class="cont-inside" id="cont-inside"></div>
+            <div class="contPhoto "><img src="img/contact_photo_lg.png" alt=" "></div>
+            <div class="contTitle ">
+                <img src="img/intro_wanna_work_with_us_lg.svg" alt="Wanna Work With Us"></div>
+            <div class=" contText ">
+                <h1>Business Contact Information - business-related contact information disclosed by Licensee to IBM, including names, job titles.</h1>
+            </div>
     </main>
     </div>
+
+    <!-- ++++++  FOOTER ++++++ -->
 
     <footer>
         <div>
@@ -185,24 +178,24 @@
         <div>
             <div>
                 <ul class="nav--social ">
-                    <li class="nav--social__effect">
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img src="img/s_facebook_logo.png " alt="facebook">
+                    <li class="nav--social__effect ">
+                        <a href="https://www.facebook.com/ " target="_blank ">
+                            <img src="img/s_facebook_logo.png " alt="facebook ">
                         </a>
                     </li>
-                    <li class="nav--social__effect">
-                        <a href="https://www.behance.net/" target="_blank">
+                    <li class="nav--social__effect ">
+                        <a href="https://www.behance.net/ " target="_blank ">
                             <img src=" img/s_behance_logo.png " alt="behance ">
                         </a>
                     </li>
-                    <li class="nav--social__effect">
-                        <a href="https://twitter.com/?lang=es" target="_blank">
-                            <img src="img/s_twiter_logo.png " alt="twitter">
+                    <li class="nav--social__effect ">
+                        <a href="https://twitter.com/?lang=es " target="_blank ">
+                            <img src="img/s_twiter_logo.png " alt="twitter ">
                         </a>
                     </li>
-                    <li class="nav--social__effect">
-                        <a href="https://www.instagram.com/?hl=es" target="_blank">
-                            <img src="img/s_instagram_logo.png " alt="instagram">
+                    <li class="nav--social__effect ">
+                        <a href="https://www.instagram.com/?hl=es " target="_blank ">
+                            <img src="img/s_instagram_logo.png " alt="instagram ">
                         </a>
                     </li>
                 </ul>
@@ -210,7 +203,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 
 </body>
 
