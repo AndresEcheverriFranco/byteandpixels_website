@@ -1,0 +1,63 @@
+.navRes {
+    grid-area: navRes;
+}
+
+.titleRes {
+    width: 100%;
+    grid-area: titleRes;
+}
+
+.titleRes img {
+    padding: 4rem 0 0 80rem;
+}
+
+.destRes {
+    width: 80%;
+    grid-area: destRes;
+}
+
+.imgRes {
+    grid-area: imgRes;
+}
+
+.card {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: end;
+}
+
+.textRes {
+    grid-area: textRes;
+    margin: 7rem 20rem 0 20rem;
+}
+
+.subRes {
+    grid-area: subRes;
+    width: 79%;
+    padding-left: 20rem;
+    padding-top: 14rem;
+}
+
+.footerRes {
+    grid-area: footerRes;
+}
+
+.grid-resources {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 13rem auto;
+    grid-template-rows: 10rem 18rem 24rem 70rem 20rem 10rem;
+    grid-template-areas: "navRes navRes""titleRes titleRes""destRes  textRes""destRes imgRes""subRes subRes""footerRes footerRes";
+}
