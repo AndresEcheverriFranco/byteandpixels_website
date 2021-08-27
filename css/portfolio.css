@@ -1,0 +1,124 @@
+.navPort {
+    grid-area: navPort;
+}
+
+.titlePort {
+    grid-area: titlePort;
+}
+
+.titlePort img {
+    width: 60%;
+    padding-top: 3rem;
+    padding-left: 50rem;
+}
+
+.destPort {
+    grid-area: destPort;
+    width: 86%;
+    padding-top: 90rem;
+}
+
+.imgPort {
+    grid-area: imgPort;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery .col-lg-3 {
+    padding: 2.5rem;
+    margin-left: 4rem;
+}
+
+.textPort {
+    grid-area: textPort;
+    margin: 7rem 20rem 0 20rem;
+}
+
+.subPort {
+    grid-area: subPort;
+    width: 70%;
+    padding-top: 8rem;
+    padding-left: 10rem;
+}
+
+.footerPort {
+    background-color: rgb(32, 93, 140);
+    grid-area: footerPort;
+}
+
+.grid-portfolio {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 17rem auto;
+    grid-template-rows: 10rem 29rem 20rem 324rem 14rem 10rem;
+    grid-template-areas: "navPort navPort""titlePort titlePort""destPort textPort""destPort imgPort""subPort subPort""footerPort footerPort";
+}
+
+
+/*EFFECTS*/
+
+.gallery-container {
+    width: 33%;
+    padding: 2rem;
+    margin-left: 8rem;
+}
+
+.gallery-container figure {
+    position: relative;
+    width: 29rem;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.gallery-container figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.gallery-container figure .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 168, 111, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.gallery-container figure:hover>.layer {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery-container figure:hover>.layer h3 {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-container figure .layer h3 {
+    color: #fff;
+    font-weight: 40rem;
+    margin-bottom: 12rem;
+    transition: all 500ms ease-out;
+    margin-top: 2rem;
+}
+
+.gallery-container figure .layer p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 22rem;
+    margin: auto;
+}
+
+.gallery-container figure:hover>img {
+    transform: scale(1.3);
+}
