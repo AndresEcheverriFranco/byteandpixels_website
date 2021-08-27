@@ -12,7 +12,7 @@
     box-sizing: inherit;
 }
 
- :root {
+:root {
     --primary: #F39200;
     --secondary: #808080;
     --white: #ffffff;
@@ -38,10 +38,16 @@ h1 {
     line-height: var(--large);
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 h2 {
     font-family: 'Antic Didone', serif;
     font-size: var(--small)
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 p {
     font-family: 'Quicksand', sans-serif;
@@ -99,6 +105,9 @@ li {
     background-color: var(--white);
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .nav--container a {
     color: var(--secondary);
 }
@@ -107,16 +116,25 @@ li {
     padding-right: 10rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .nav--links {
     width: 90rem;
     display: flex;
     justify-content: space-around;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .nav--logo__size {
     width: 29rem;
     padding-left: 10rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .nav--social {
     width: 25rem;
@@ -126,18 +144,30 @@ li {
     transition: all 300ms;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .nav--social img {
     height: 2rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .nav--social li {
     padding-left: 6rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .nav--social__effect a img:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .navbar-toggler {
     color: var(--white);
@@ -146,26 +176,8 @@ li {
     font-size: var(--med);
 }
 
-@media (max-width:768px) {
-    body {
-        background-color: gainsboro;
-    }
-    .navbar {
-        background-color: rgb(130, 41, 41);
-        height: 8rem;
-    }
-    .navbar ul {
-        background-color: #fff;
-        margin-top: 0;
-    }
-    .nav--logo__size {
-        width: 26rem;
-        padding: 0 0 0 1rem;
-    }
-    .nav--container {
-        padding-left: 0;
-    }
-}
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- COMPLETE GRID INDEX ---- */
@@ -173,10 +185,13 @@ li {
 .grid-container-index {
     background-color: var(--white);
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 9rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 30rem 28rem 11rem;
-    grid-template-areas: "topNav topNav topNav topNav topNav topNav""intro intro intro intro intro intro" "ab-inside ab-inside ab-inside ab-inside ab-inside ab-inside" "abPhoto abPhoto abPhoto abTitle abTitle abTitle" "abPhoto abPhoto abPhoto abText abText abLink" "prod-inside prod-inside prod-inside prod-inside prod-inside prod-inside""prodTitle prodTitle prodText prodText prodPhoto prodPhoto" "prodLink prodLink prodText prodText prodPhoto prodPhoto" "res-inside res-inside res-inside res-inside res-inside res-inside""resTitle resTitle resTitle resTitle resTitle resTitle" "resLink resText resText resText resText resText" "resPhoto resPhoto resPhoto resPhoto resPhoto resPhoto" "port-inside port-inside port-inside port-inside port-inside port-inside""portTitle portTitle portTitle portTitle portText portText" "portPhoto portPhoto portPhoto portLink portText portText" "cont-inside cont-inside cont-inside cont-inside cont-inside cont-inside" "cont-space cont-space contTitle contTitle contPhoto contPhoto" "cont-space cont-space contText contText contPhoto contPhoto" "footer footer footer footer footer footer";
+    grid-template-areas: "topNav topNav topNav " "intro intro intro" "ab-inside ab-inside ab-inside " "abPhoto abTitle abLink " "abPhoto abText abLink" "prod-inside prod-inside prod-inside" "prodTitle prodText prodPhoto" "prodLink  prodText prodPhoto" "res-inside res-inside res-inside" "resTitle resTitle resTitle" "resLink resText resText" "resPhoto resPhoto resPhoto" "port-inside port-inside port-inside""portPhoto portTitle portTitle" "portPhoto portLink portText" "cont-inside cont-inside cont-inside" "cont-space contTitle contPhoto" "cont-space contText contPhoto" "footer footer footer";
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- 1. SECTION INTRO INDEX ---- */
@@ -184,8 +199,11 @@ li {
 .topNav {
     grid-area: topNav;
     max-width: 100%;
-    height: 8rem;
+    height: 7rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .intro {
     grid-area: intro;
@@ -194,10 +212,16 @@ li {
     align-items: center;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .intro img {
-    width: 80rem;
-    margin-top: 20rem;
+    width: 70rem;
+    margin-top: 14rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- 2. SECTION ABOUT US INDEX---- */
@@ -212,10 +236,12 @@ li {
 }
 
 .abPhoto {
-    padding-top: 13rem;
-    max-width: 80rem;
-    margin-top: 6rem;
+    max-width: 70rem;
+    margin-top: 16rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .abPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
@@ -223,25 +249,34 @@ li {
 
 .abTitle {
     grid-area: abTitle;
-    margin-top: 6rem;
-    padding-top: 6rem;
-    max-width: 40rem;
+    margin: 12rem 0 0 2rem;
+    padding-top: 0rem;
+    max-width: 45rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .abText {
     grid-area: abText;
-    padding: 6rem 5rem 0 3rem;
+    padding: 16rem 5rem 0 3rem;
     font-size: var(--small);
-    margin-top: 5rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .abLink {
     grid-area: abLink;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15rem;
+    padding-bottom: 5rem;
+    padding-right: 30rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- 3. SECTION PRODUCT INDEX---- */
@@ -251,6 +286,9 @@ li {
     max-width: 100%;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .prodPhoto {
     grid-area: prodPhoto;
     display: flex;
@@ -259,9 +297,15 @@ li {
     margin-top: 7rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .prodPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .prodTitle {
     grid-area: prodTitle;
@@ -272,6 +316,9 @@ li {
     padding-left: 10rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .prodText {
     grid-area: prodText;
     padding: 20rem 10rem 0 9rem;
@@ -280,6 +327,9 @@ li {
     justify-content: flex-end;
     align-items: end;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .prodLink {
     grid-area: prodLink;
@@ -291,6 +341,9 @@ li {
 }
 
 
+/* @media(min-width:XXX px) {} */
+
+
 /* ---- 4. SECTION RESOURCES INDEX---- */
 
 .res-inside {
@@ -298,30 +351,43 @@ li {
     max-width: 100%;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .resPhoto {
     grid-area: resPhoto;
-    padding-top: 2.2rem;
+    margin-top: 10rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .resPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .resTitle {
     grid-area: resTitle;
-    position: relative;
-    max-width: 80rem;
-    margin-top: 4rem;
-    padding-top: 7.5rem;
-    padding-left: 55rem;
+    max-width: 95rem;
+    padding-top: 15rem;
+    padding-left: 50rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .resText {
     grid-area: resText;
     font-size: var(--small);
-    padding: 2rem 50rem 0 20rem;
-    margin-top: 6rem;
+    padding: 1rem 50rem 0 18rem;
+    margin-top: 13rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .resLink {
     grid-area: resLink;
@@ -329,8 +395,11 @@ li {
     justify-content: flex-end;
     align-items: center;
     padding-right: 2rem;
-    padding-bottom: 7rem;
+    padding-top: 18rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- 5. SECTION PORTFOLIO INDEX---- */
@@ -340,37 +409,53 @@ li {
     max-width: 100%;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .portPhoto {
     grid-area: portPhoto;
-    display: flex;
+    padding-top: 20rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .portPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .portTitle {
     grid-area: portTitle;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
     max-width: 80rem;
-    padding: 6rem 0 0 17rem;
+    padding: 15rem 0 0 17rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .portText {
     grid-area: portText;
     font-size: var(--small);
-    padding: 26rem 8rem 0 0;
+    padding: 20rem 8rem 0 0;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .portLink {
     grid-area: portLink;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 15rem;
+    padding-top: 1rem;
+    margin-right: 23rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- 6. SECTION CONTACT INDEX---- */
@@ -380,54 +465,73 @@ li {
     max-width: 100%;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .contPhoto {
     grid-area: contPhoto;
 }
 
 .contPhoto img {
-    width: 60rem;
+    width: 50rem;
     margin-top: 10rem;
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .contTitle {
     grid-area: contTitle;
     padding-top: 10.5rem;
-    padding-left: 8rem;
+    padding-left: 4rem;
     max-width: 50rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .contText {
     grid-area: contText;
     font-size: var(--small);
-    padding: 9rem 3rem 0 8rem;
+    padding: 9rem 3rem 0 3rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .cont-space {
     grid-area: cont-space;
-    background-color: var(--white);
-    border-radius: 2rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* -----CONTACT FORM ------*/
 
 .contact-form {
     width: 40rem;
-    background-color: var(--gray);
+    background-color: ;
     padding: 3rem;
     margin: auto;
     margin-top: 5rem;
     border-radius: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(38, 34, 24);
-    box-shadow: 0.2rem 0.2rem 3rem #a3a0a0;
+    box-shadow: 0.2rem 0.2rem 3rem #b8b7b7;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .contact-form h4 {
-    font-size: 22pxvar(var(--med));
+    font-size: var(--med);
     margin-bottom: 1rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .controls-form {
     width: 100%;
@@ -441,6 +545,9 @@ li {
     color: #e0e1e3;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .form-buttons {
     width: 40%;
     background-color: var(--secondary);
@@ -453,6 +560,9 @@ li {
     border-radius: 0.5rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 textarea {
     min-height: 10rem;
     max-height: 20rem;
@@ -463,11 +573,17 @@ textarea {
     ;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .button-design {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 #form-butt {
     background-color: var(--primary);
@@ -475,74 +591,89 @@ textarea {
     color: white;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 #form-butt:hover {
     cursor: pointer;
 }
 
-@media (max-width: 580px) {
-    form {
-        width: 100%;
-    }
-}
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ---- FOOTER ---- */
 
-footer {
+.footer-container {
     grid-area: footer;
     height: 9rem;
     background-image: linear-gradient(to left, rgb(2, 2, 2), rgb(56, 53, 53), rgb(22, 21, 21));
     color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: sticky;
+    padding: 0 4rem 0 4rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 
 /* ----  MEDIA QUERIES ---- */
 
 
-/*  481 to 575 */
+/*  0 to 575 */
 
-@media screen and (max-width:575px) {
+@media (max-width:576px) {
     .grid-container-index {
-        background-color: var(--white);
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: repeat(22, 15rem);
-        grid-template-areas: "topNav" "intro" "aboutTitle" "aboutPic" "aboutText" "aboutLink" "prodTitle" "prodPhoto" "prodText" "prodLink" "resTitle" "resPhoto""resText" "resLink" "portTitle" "portPhoto" "portText" "portLink" "contTitle" "contPhoto" "contText" "footer"
-    }
-    .intro {
-        width: 30rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+        background-color: #5575df;
     }
 }
 
 
-/*  576 to 768 */
+/*  576 to 767 */
 
-@media screen and (max-width:768px) {}
-
-
-/*  769 to 992 */
-
-@media screen and (max-width:992px) {}
-
-
-/*  993 to 1200 */
-
-@media screen and (max-width:1200px) {}
+@media (min-width:576px) {
+    .grid-container-index {
+        background-color: #e9448c;
+    }
+}
 
 
-/*  1201 to 1400 */
+/*  768 to 991 */
 
-@media screen and (max-width:1400px) {}
+@media (min-width:768px) {
+    .grid-container-index {
+        background-color: #36e4a1;
+    }
+}
 
 
-/*  1401 ahead */
+/*  992 to 1199 */
 
-@media screen and (max-width:1920px) {}
+@media (min-width:992px) {
+    .grid-container-index {
+        background-color: #8c6ec4;
+    }
+}
+
+
+/* @media(min-width:XXX px) {} */
+
+
+/*  1200 to 1400  */
+
+@media (min-width: 1200px) {
+    .grid-container-index {
+        background-color: #a79479;
+    }
+}
+
+
+/*  1401 above */
+
+@media (min-width:1401px) {
+    .grid-container-index {
+        background-color: #f5c2bc;
+    }
+}

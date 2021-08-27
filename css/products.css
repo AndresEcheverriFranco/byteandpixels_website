@@ -12,16 +12,25 @@
     padding-top: 5rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .destProd {
     grid-area: destProd;
     width: 66%;
     padding-top: 7rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .imgProd {
     grid-area: imgProd;
     margin: 4rem 22rem 0 0;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .subProd {
     grid-area: subProd;
@@ -29,10 +38,16 @@
     margin-top: 19rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .footerProd {
     grid-area: footerProd;
     background-color: rgb(140, 54, 74);
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .grid-products {
     margin: 0;
@@ -41,6 +56,9 @@
     grid-template-rows: 10rem 16rem 54rem 27rem 10rem;
     grid-template-areas: "navProd navProd""titleProd destProd""imgProd destProd""subProd subProd""footerUs footerUs";
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .accordion-button {
     position: inherit;
@@ -55,3 +73,6 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
     display: flex;
 }
+
+
+/* @media(min-width:XXX px) {} */

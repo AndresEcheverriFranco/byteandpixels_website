@@ -7,18 +7,30 @@
     grid-area: titleRes;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .titleRes img {
     padding: 4rem 0 0 80rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .destRes {
     width: 80%;
     grid-area: destRes;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .imgRes {
     grid-area: imgRes;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .card {
     position: inherit;
@@ -32,16 +44,25 @@
     border-radius: .25rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .card-title {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: end;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .textRes {
     grid-area: textRes;
     margin: 7rem 20rem 0 20rem;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .subRes {
     grid-area: subRes;
@@ -50,9 +71,15 @@
     padding-top: 14rem;
 }
 
+
+/* @media(min-width:XXX px) {} */
+
 .footerRes {
     grid-area: footerRes;
 }
+
+
+/* @media(min-width:XXX px) {} */
 
 .grid-resources {
     margin: 0;
@@ -61,3 +88,6 @@
     grid-template-rows: 10rem 18rem 24rem 70rem 20rem 10rem;
     grid-template-areas: "navRes navRes""titleRes titleRes""destRes  textRes""destRes imgRes""subRes subRes""footerRes footerRes";
 }
+
+
+/* @media(min-width:XXX px) {} */
