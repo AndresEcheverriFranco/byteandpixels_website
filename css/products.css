@@ -1,0 +1,57 @@
+.navProd {
+    grid-area: navProd;
+    background-color: rgb(225, 154, 154);
+}
+
+.titleProd {
+    grid-area: titleProd;
+}
+
+.titleProd img {
+    width: 77%;
+    padding-top: 5rem;
+}
+
+.destProd {
+    grid-area: destProd;
+    width: 66%;
+    padding-top: 7rem;
+}
+
+.imgProd {
+    grid-area: imgProd;
+    margin: 4rem 22rem 0 0;
+}
+
+.subProd {
+    grid-area: subProd;
+    width: 82%;
+    margin-top: 19rem;
+}
+
+.footerProd {
+    grid-area: footerProd;
+    background-color: rgb(140, 54, 74);
+}
+
+.grid-products {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 29rem;
+    grid-template-rows: 10rem 16rem 54rem 27rem 10rem;
+    grid-template-areas: "navProd navProd""titleProd destProd""imgProd destProd""subProd subProd""footerUs footerUs";
+}
+
+.accordion-button {
+    position: inherit;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 1.25rem;
+    font-size: 3rem;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+    display: flex;
+}
