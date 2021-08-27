@@ -488,15 +488,15 @@ textarea {
 
 /* ---- FOOTER ---- */
 
-footer {
+.footer-container {
     grid-area: footer;
     height: 9rem;
     background-image: linear-gradient(to left, rgb(2, 2, 2), rgb(56, 53, 53), rgb(22, 21, 21));
     color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: sticky;
+    padding: 0 4rem 0 4rem;
 }
 
 
