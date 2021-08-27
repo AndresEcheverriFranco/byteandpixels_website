@@ -1,0 +1,555 @@
+/*------ VARIABLES ------*/
+
+$primary: #F39200;
+$secondary: #808080;
+$white: #ffffff;
+$black: #000000;
+$gray: #D1D1D1;
+$small: 1.3rem;
+$med: 2.2rem;
+$large: 3.1rem;
+$bot: 1.7rem;
+
+/*------ IMPORTS ------*/
+
+@import"aboutus";
+@import"portfolio";
+@import"products";
+@import"resources";
+
+/* GENERAL SETUPS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--med);
+    line-height: var(--large);
+}
+
+h2 {
+    font-family: 'Antic Didone', serif;
+    font-size: var(--small)
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(40, 37, 37);
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ---- BUTTONS ---- */
+
+.btn {
+    font-size: var(--bot);
+}
+
+.btn-light {
+    background-color: var(--white);
+}
+
+.btn-light_effect:hover {
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 0.7rem;
+    transition: 0.5s;
+    transform: scale(1.12);
+}
+
+.btn-light_effectLink {
+    background-color: var(--secondary);
+    border-radius: 0.6rem;
+    color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+
+/* MAIN NAVEGATION */
+
+.nav--container {
+    position: fixed;
+    height: 9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+}
+
+.nav--container a {
+    color: var(--secondary);
+}
+
+.navbar-position_list {
+    padding-right: 10rem;
+}
+
+.nav--links {
+    width: 90rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav--logo__size {
+    width: 29rem;
+    padding-left: 10rem;
+}
+
+.nav--social {
+    width: 25rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 300ms;
+}
+
+.nav--social img {
+    height: 2rem;
+}
+
+.nav--social li {
+    padding-left: 6rem;
+}
+
+.nav--social__effect a img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.navbar-toggler {
+    color: var(--white);
+    background: none;
+    border: none;
+    font-size: var(--med);
+}
+
+@media (max-width:768px) {
+    body {
+        background-color: gainsboro;
+    }
+    .navbar {
+        background-color: rgb(130, 41, 41);
+        height: 8rem;
+    }
+    .navbar ul {
+        background-color: #fff;
+        margin-top: 0;
+    }
+    .nav--logo__size {
+        width: 26rem;
+        padding: 0 0 0 1rem;
+    }
+    .nav--container {
+        padding-left: 0;
+    }
+}
+
+
+/* ---- COMPLETE GRID INDEX ---- */
+
+.grid-container-index {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 9rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 30rem 28rem 11rem;
+    grid-template-areas: "topNav topNav topNav topNav topNav topNav""intro intro intro intro intro intro" "ab-inside ab-inside ab-inside ab-inside ab-inside ab-inside" "abPhoto abPhoto abPhoto abTitle abTitle abTitle" "abPhoto abPhoto abPhoto abText abText abLink" "prod-inside prod-inside prod-inside prod-inside prod-inside prod-inside""prodTitle prodTitle prodText prodText prodPhoto prodPhoto" "prodLink prodLink prodText prodText prodPhoto prodPhoto" "res-inside res-inside res-inside res-inside res-inside res-inside""resTitle resTitle resTitle resTitle resTitle resTitle" "resLink resText resText resText resText resText" "resPhoto resPhoto resPhoto resPhoto resPhoto resPhoto" "port-inside port-inside port-inside port-inside port-inside port-inside""portTitle portTitle portTitle portTitle portText portText" "portPhoto portPhoto portPhoto portLink portText portText" "cont-inside cont-inside cont-inside cont-inside cont-inside cont-inside" "cont-space cont-space contTitle contTitle contPhoto contPhoto" "cont-space cont-space contText contText contPhoto contPhoto" "footer footer footer footer footer footer";
+}
+
+
+/* ---- 1. SECTION INTRO INDEX ---- */
+
+.topNav {
+    grid-area: topNav;
+    max-width: 100%;
+    height: 8rem;
+}
+
+.intro {
+    grid-area: intro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro img {
+    width: 80rem;
+    margin-top: 20rem;
+}
+
+
+/* ---- 2. SECTION ABOUT US INDEX---- */
+
+.ab-inside {
+    grid-area: ab-inside;
+    max-width: 100%;
+}
+
+.abPhoto {
+    grid-area: abPhoto;
+}
+
+.abPhoto {
+    padding-top: 13rem;
+    max-width: 80rem;
+    margin-top: 6rem;
+}
+
+.abPhoto img {
+    box-shadow: 2px 2px 30px #a3a0a0;
+}
+
+.abTitle {
+    grid-area: abTitle;
+    margin-top: 6rem;
+    padding-top: 6rem;
+    max-width: 40rem;
+}
+
+.abText {
+    grid-area: abText;
+    padding: 6rem 5rem 0 3rem;
+    font-size: var(--small);
+    margin-top: 5rem;
+}
+
+.abLink {
+    grid-area: abLink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15rem;
+}
+
+
+/* ---- 3. SECTION PRODUCT INDEX---- */
+
+.prod-inside {
+    grid-area: prod-inside;
+    max-width: 100%;
+}
+
+.prodPhoto {
+    grid-area: prodPhoto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.prodPhoto img {
+    box-shadow: 2px 2px 30px #a3a0a0;
+}
+
+.prodTitle {
+    grid-area: prodTitle;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 24rem;
+    padding-left: 10rem;
+}
+
+.prodText {
+    grid-area: prodText;
+    padding: 20rem 10rem 0 9rem;
+    font-size: var(--small);
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.prodLink {
+    grid-area: prodLink;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 3rem;
+    margin-top: 7rem;
+}
+
+
+/* ---- 4. SECTION RESOURCES INDEX---- */
+
+.res-inside {
+    grid-area: res-inside;
+    max-width: 100%;
+}
+
+.resPhoto {
+    grid-area: resPhoto;
+    padding-top: 2.2rem;
+}
+
+.resPhoto img {
+    box-shadow: 2px 2px 30px #a3a0a0;
+}
+
+.resTitle {
+    grid-area: resTitle;
+    position: relative;
+    max-width: 80rem;
+    margin-top: 4rem;
+    padding-top: 7.5rem;
+    padding-left: 55rem;
+}
+
+.resText {
+    grid-area: resText;
+    font-size: var(--small);
+    padding: 2rem 50rem 0 20rem;
+    margin-top: 6rem;
+}
+
+.resLink {
+    grid-area: resLink;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    padding-bottom: 7rem;
+}
+
+
+/* ---- 5. SECTION PORTFOLIO INDEX---- */
+
+.port-inside {
+    grid-area: port-inside;
+    max-width: 100%;
+}
+
+.portPhoto {
+    grid-area: portPhoto;
+    display: flex;
+}
+
+.portPhoto img {
+    box-shadow: 2px 2px 30px #a3a0a0;
+}
+
+.portTitle {
+    grid-area: portTitle;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    max-width: 80rem;
+    padding: 6rem 0 0 17rem;
+}
+
+.portText {
+    grid-area: portText;
+    font-size: var(--small);
+    padding: 26rem 8rem 0 0;
+}
+
+.portLink {
+    grid-area: portLink;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 15rem;
+}
+
+
+/* ---- 6. SECTION CONTACT INDEX---- */
+
+.cont-inside {
+    grid-area: cont-inside;
+    max-width: 100%;
+}
+
+.contPhoto {
+    grid-area: contPhoto;
+}
+
+.contPhoto img {
+    width: 60rem;
+    margin-top: 10rem;
+    box-shadow: 2px 2px 30px #a3a0a0;
+}
+
+.contTitle {
+    grid-area: contTitle;
+    padding-top: 10.5rem;
+    padding-left: 8rem;
+    max-width: 50rem;
+}
+
+.contText {
+    grid-area: contText;
+    font-size: var(--small);
+    padding: 9rem 3rem 0 8rem;
+}
+
+.cont-space {
+    grid-area: cont-space;
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+
+/* -----CONTACT FORM ------*/
+
+.contact-form {
+    width: 40rem;
+    background-color: var(--gray);
+    padding: 3rem;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(38, 34, 24);
+    box-shadow: 0.2rem 0.2rem 3rem #a3a0a0;
+}
+
+.contact-form h4 {
+    font-size: 22pxvar(var(--med));
+    margin-bottom: 1rem;
+}
+
+.controls-form {
+    width: 100%;
+    background-color: rgb(250, 248, 248);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid #e0e1e3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--small);
+    color: #e0e1e3;
+}
+
+.form-buttons {
+    width: 40%;
+    background-color: var(--secondary);
+    border: none;
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: var(--small);
+    border-radius: 0.5rem;
+}
+
+textarea {
+    min-height: 10rem;
+    max-height: 20rem;
+    max-width: 103%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(250, 248, 248);
+    ;
+}
+
+.button-design {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#form-butt {
+    background-color: var(--primary);
+    border: none;
+    color: white;
+}
+
+#form-butt:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+/* ---- FOOTER ---- */
+
+.footer-container {
+    grid-area: footer;
+    height: 9rem;
+    background-image: linear-gradient(to left, rgb(2, 2, 2), rgb(56, 53, 53), rgb(22, 21, 21));
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4rem 0 4rem;
+}
+
+
+/* ----  MEDIA QUERIES ---- */
+
+
+/*  481 to 575 */
+
+@media screen and (max-width:575px) {
+    .grid-container-index {
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(22, 15rem);
+        grid-template-areas: "topNav" "intro" "aboutTitle" "aboutPic" "aboutText" "aboutLink" "prodTitle" "prodPhoto" "prodText" "prodLink" "resTitle" "resPhoto""resText" "resLink" "portTitle" "portPhoto" "portText" "portLink" "contTitle" "contPhoto" "contText" "footer"
+    }
+    .intro {
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+
+/*  576 to 768 */
+
+@media screen and (max-width:768px) {}
+
+
+/*  769 to 992 */
+
+@media screen and (max-width:992px) {}
+
+
+/*  993 to 1200 */
+
+@media screen and (max-width:1200px) {}
+
+
+/*  1201 to 1400 */
+
+@media screen and (max-width:1400px) {}
+
+
+/*  1401 ahead */
+
+@media screen and (max-width:1920px) {}
