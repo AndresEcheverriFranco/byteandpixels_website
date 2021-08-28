@@ -12,7 +12,7 @@
     box-sizing: inherit;
 }
 
-:root {
+ :root {
     --primary: #F39200;
     --secondary: #808080;
     --white: #ffffff;
@@ -38,16 +38,10 @@ h1 {
     line-height: var(--large);
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 h2 {
     font-family: 'Antic Didone', serif;
     font-size: var(--small)
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 p {
     font-family: 'Quicksand', sans-serif;
@@ -105,9 +99,6 @@ li {
     background-color: var(--white);
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .nav--container a {
     color: var(--secondary);
 }
@@ -116,58 +107,16 @@ li {
     padding-right: 10rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .nav--links {
     width: 90rem;
     display: flex;
     justify-content: space-around;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .nav--logo__size {
     width: 29rem;
     padding-left: 10rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
-
-.nav--social {
-    width: 25rem;
-    margin-right: 1rem;
-    display: flex;
-    justify-content: space-between;
-    transition: all 300ms;
-}
-
-
-/* @media(min-width:XXX px) {} */
-
-.nav--social img {
-    height: 2rem;
-}
-
-
-/* @media(min-width:XXX px) {} */
-
-.nav--social li {
-    padding-left: 6rem;
-}
-
-
-/* @media(min-width:XXX px) {} */
-
-.nav--social__effect a img:hover {
-    transform: scale(1.2);
-    transition: 0.5s;
-}
-
-
-/* @media(min-width:XXX px) {} */
 
 .navbar-toggler {
     color: var(--white);
@@ -177,21 +126,15 @@ li {
 }
 
 
-/* @media(min-width:XXX px) {} */
-
-
 /* ---- COMPLETE GRID INDEX ---- */
 
 .grid-container-index {
     background-color: var(--white);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 9rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 30rem 28rem 11rem;
-    grid-template-areas: "topNav topNav topNav " "intro intro intro" "ab-inside ab-inside ab-inside " "abPhoto abTitle abLink " "abPhoto abText abLink" "prod-inside prod-inside prod-inside" "prodTitle prodText prodPhoto" "prodLink  prodText prodPhoto" "res-inside res-inside res-inside" "resTitle resTitle resTitle" "resLink resText resText" "resPhoto resPhoto resPhoto" "port-inside port-inside port-inside""portPhoto portTitle portTitle" "portPhoto portLink portText" "cont-inside cont-inside cont-inside" "cont-space contTitle contPhoto" "cont-space contText contPhoto" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 30rem 28rem 11rem;
+    grid-template-areas: "topNav topNav topNav " "intro intro intro" "ab-inside ab-inside ab-inside " "abPhoto abTitle abText  " "abPhoto abTitle abLink" "prod-inside prod-inside prod-inside" "prodTitle prodText prodPhoto" "prodLink  prodText prodPhoto" "res-inside res-inside res-inside" "resTitle resTitle resTitle" "resLink resText resText" "resPhoto resPhoto resPhoto" "port-inside port-inside port-inside""portPhoto portTitle portTitle" "portPhoto portText portLink" "cont-inside cont-inside cont-inside" "cont-space contTitle contPhoto" "cont-space contText contPhoto" "footer footer footer";
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 
 /* ---- 1. SECTION INTRO INDEX ---- */
@@ -202,9 +145,6 @@ li {
     height: 7rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .intro {
     grid-area: intro;
     display: flex;
@@ -212,16 +152,22 @@ li {
     align-items: center;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .intro img {
     width: 70rem;
     margin-top: 14rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
+@media(max-width:768px) {
+    .intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro img {
+        width: 45rem;
+        margin-top: 4rem;
+    }
+}
 
 
 /* ---- 2. SECTION ABOUT US INDEX---- */
@@ -237,11 +183,8 @@ li {
 
 .abPhoto {
     max-width: 70rem;
-    margin-top: 16rem;
+    margin-top: 18rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .abPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
@@ -249,34 +192,63 @@ li {
 
 .abTitle {
     grid-area: abTitle;
-    margin: 12rem 0 0 2rem;
+    margin: 20rem 0 0 4rem;
     padding-top: 0rem;
     max-width: 45rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .abText {
     grid-area: abText;
-    padding: 16rem 5rem 0 3rem;
+    margin-top: 30rem;
     font-size: var(--small);
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .abLink {
     grid-area: abLink;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5rem;
-    padding-right: 30rem;
+    margin: 3rem 5rem 0 0;
 }
 
+@media(max-width:1400px) {
+    .abPhoto img {
+        margin-top: 2rem;
+        max-width: 42rem;
+    }
+    .abTitle img {
+        margin: 2rem 0 0 1rem;
+        max-width: 40rem;
+    }
+    .abText {
+        margin-top: 25rem;
+        margin-left: 2rem;
+    }
+    .abLink {
+        margin: 0 5rem 0 0;
+    }
+}
 
-/* @media(min-width:XXX px) {} */
+@media(max-width:1200px) {
+    .abPhoto {
+        margin-top: 20rem;
+    }
+    .abTitle img {
+        grid-area: abTitle;
+        margin-top: 1rem;
+    }
+    .abText {
+        grid-area: abText;
+        margin-top: 30rem;
+    }
+    .abLink {
+        grid-area: abLink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 5rem 0 0;
+    }
+}
 
 
 /* ---- 3. SECTION PRODUCT INDEX---- */
@@ -286,9 +258,6 @@ li {
     max-width: 100%;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .prodPhoto {
     grid-area: prodPhoto;
     display: flex;
@@ -297,51 +266,58 @@ li {
     margin-top: 7rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .prodPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .prodTitle {
     grid-area: prodTitle;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-top: 24rem;
-    padding-left: 10rem;
+    margin-top: 15rem;
+    margin-left: 9rem;
+    max-width: 50rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .prodText {
     grid-area: prodText;
-    padding: 20rem 10rem 0 9rem;
+    margin: 20rem 7rem 0 4rem;
     font-size: var(--small);
     display: flex;
     justify-content: flex-end;
     align-items: end;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .prodLink {
     grid-area: prodLink;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 3rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 
+@media(max-width:1400px) {
+    .prodPhoto {
+        margin-top: 5rem;
+    }
+    .prodTitle {
+        margin-top: 19rem;
+        margin-left: 2rem;
+        max-width: 50rem;
+    }
+    .prodText {
+        margin: 20rem 3rem 0 2rem;
+    }
+    .prodLink {
+        margin-top: 2rem;
+        margin-right: 4rem;
+    }
+}
 
-/* @media(min-width:XXX px) {} */
+@media(max-width:1200px) {
+    .prodLink {
+        margin-top: 1rem;
+        margin-right: 9rem;
+    }
+}
 
 
 /* ---- 4. SECTION RESOURCES INDEX---- */
@@ -351,55 +327,68 @@ li {
     max-width: 100%;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .resPhoto {
     grid-area: resPhoto;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .resPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .resTitle {
     grid-area: resTitle;
-    max-width: 95rem;
-    padding-top: 15rem;
-    padding-left: 50rem;
+    max-width: 85rem;
+    margin-top: 8rem;
+    margin-left: 50rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .resText {
     grid-area: resText;
     font-size: var(--small);
-    padding: 1rem 50rem 0 18rem;
-    margin-top: 13rem;
+    margin: 5rem 20rem 0 0;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .resLink {
     grid-area: resLink;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 2rem;
-    padding-top: 18rem;
+    margin: 5rem 10rem 0 0;
 }
 
+@media(max-width:1400px) {
+    .resPhoto {
+        margin-top: 14rem;
+    }
+    .resTitle {
+        grid-area: resTitle;
+        max-width: 75rem;
+        margin-top: 12rem;
+        margin-left: 20rem;
+    }
+    .resText {
+        margin: 12rem 14rem 0 0;
+    }
+    .resLink {
+        margin: 12rem 10rem 0 0;
+    }
+}
 
-/* @media(min-width:XXX px) {} */
+@media(max-width:1200px) {
+    .resTitle {
+        grid-area: resTitle;
+        max-width: 70rem;
+        margin-top: 10rem;
+        margin-left: 10rem;
+    }
+    .resText {
+        margin: 8rem 14rem 0 0;
+    }
+    .resLink {
+        margin: 8rem 10rem 0 0;
+    }
+}
 
 
 /* ---- 5. SECTION PORTFOLIO INDEX---- */
@@ -409,53 +398,71 @@ li {
     max-width: 100%;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .portPhoto {
     grid-area: portPhoto;
-    padding-top: 20rem;
+    margin-top: 20rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .portPhoto img {
     box-shadow: 2px 2px 30px #a3a0a0;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .portTitle {
     grid-area: portTitle;
     max-width: 80rem;
-    padding: 15rem 0 0 17rem;
+    margin: 15rem 0 0 17rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .portText {
     grid-area: portText;
     font-size: var(--small);
-    padding: 20rem 8rem 0 0;
+    margin: 14rem 4rem 0 4rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .portLink {
     grid-area: portLink;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 1rem;
-    margin-right: 23rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
 }
 
+@media(max-width:1400px) {
+    .portPhoto {
+        margin-top: 29rem;
+    }
+    .portTitle {
+        grid-area: portTitle;
+        max-width: 60rem;
+        margin: 12rem 0 0 2rem;
+    }
+    .portText {
+        grid-area: portText;
+        font-size: var(--small);
+        margin: 2rem 1rem 0 4rem;
+    }
+    .portLink {
+        margin-top: 3rem;
+        margin-left: 4rem;
+    }
+}
 
-/* @media(min-width:XXX px) {} */
+@media(max-width:1200px) {
+    .portTitle {
+        max-width: 60rem;
+        margin-top: 9rem;
+    }
+    .portText {
+        grid-area: portText;
+        font-size: var(--small);
+        margin: 0 1rem 0 4rem;
+    }
+    .portLink {
+        margin-top: 1rem;
+        margin-left: 4rem;
+    }
+}
 
 
 /* ---- 6. SECTION CONTACT INDEX---- */
@@ -465,21 +472,16 @@ li {
     max-width: 100%;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .contPhoto {
     grid-area: contPhoto;
 }
 
 .contPhoto img {
     width: 50rem;
+    margin-left: 9rem;
     margin-top: 10rem;
     box-shadow: 2px 2px 30px #a3a0a0;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .contTitle {
     grid-area: contTitle;
@@ -488,50 +490,33 @@ li {
     max-width: 50rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .contText {
     grid-area: contText;
     font-size: var(--small);
     padding: 9rem 3rem 0 3rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .cont-space {
     grid-area: cont-space;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 
 /* -----CONTACT FORM ------*/
 
 .contact-form {
     width: 40rem;
-    background-color: ;
     padding: 3rem;
-    margin: auto;
-    margin-top: 5rem;
+    margin: 1rem 0 0 3rem;
     border-radius: 0.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(38, 34, 24);
     box-shadow: 0.2rem 0.2rem 3rem #b8b7b7;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .contact-form h4 {
     font-size: var(--med);
     margin-bottom: 1rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .controls-form {
     width: 100%;
@@ -545,9 +530,6 @@ li {
     color: #e0e1e3;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .form-buttons {
     width: 40%;
     background-color: var(--secondary);
@@ -560,9 +542,6 @@ li {
     border-radius: 0.5rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 textarea {
     min-height: 10rem;
     max-height: 20rem;
@@ -573,17 +552,11 @@ textarea {
     ;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .button-design {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 #form-butt {
     background-color: var(--primary);
@@ -591,15 +564,49 @@ textarea {
     color: white;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 #form-butt:hover {
     cursor: pointer;
 }
 
+@media(max-width:1400px) {
+    .cont-space {
+        grid-area: cont-space;
+    }
+    .contTitle {
+        margin: 2rem 0 0 9rem;
+        max-width: 50rem;
+    }
+    .contText {
+        margin-left: 10rem;
+        margin-top: 6rem;
+    }
+    .contPhoto {
+        display: none;
+        visibility: hidden;
+    }
+    .grid-container-index {
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: 33.333% 33.333% 33.333%;
+        grid-template-rows: 9rem 60rem 9rem 34rem 34rem 9rem 38rem 30rem 9rem 24rem 24rem 20rem 9rem 28rem 40rem 9rem 20rem 28rem 10rem;
+        grid-template-areas: "topNav topNav topNav " "intro intro intro" "ab-inside ab-inside ab-inside " "abPhoto abTitle abText  " "abPhoto abTitle abLink" "prod-inside prod-inside prod-inside" "prodTitle prodText prodPhoto" "prodLink  prodText prodPhoto" "res-inside res-inside res-inside" "resTitle resTitle resTitle" "resLink resText resText" "resPhoto resPhoto resPhoto" "port-inside port-inside port-inside" "portPhoto portTitle portTitle" "portPhoto portText portLink" "cont-inside cont-inside cont-inside" "cont-space contTitle contTitle" "cont-space contText contText" "footer footer footer"
+    }
+}
 
-/* @media(min-width:XXX px) {} */
+@media(max-width:1200px) {
+    .contTitle {
+        margin: 2rem 0 0 14rem;
+        max-width: 40rem;
+    }
+    .contText {
+        margin-left: 16rem;
+        margin-top: 6rem;
+    }
+    .contPhoto {
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 /* ---- FOOTER ---- */
@@ -615,65 +622,26 @@ textarea {
     padding: 0 4rem 0 4rem;
 }
 
+.nav--social {
+    width: 25rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 300ms;
+}
 
-/* @media(min-width:XXX px) {} */
+.nav--social img {
+    height: 2rem;
+}
 
+.nav--social li {
+    padding-left: 2rem;
+}
 
-/* ----  MEDIA QUERIES ---- */
-
-
-/*  0 to 575 */
-
-@media (max-width:576px) {
-    .grid-container-index {
-        background-color: #5575df;
-    }
+.nav--social__effect a img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 
-/*  576 to 767 */
-
-@media (min-width:576px) {
-    .grid-container-index {
-        background-color: #e9448c;
-    }
-}
-
-
-/*  768 to 991 */
-
-@media (min-width:768px) {
-    .grid-container-index {
-        background-color: #36e4a1;
-    }
-}
-
-
-/*  992 to 1199 */
-
-@media (min-width:992px) {
-    .grid-container-index {
-        background-color: #8c6ec4;
-    }
-}
-
-
-/* @media(min-width:XXX px) {} */
-
-
-/*  1200 to 1400  */
-
-@media (min-width: 1200px) {
-    .grid-container-index {
-        background-color: #a79479;
-    }
-}
-
-
-/*  1401 above */
-
-@media (min-width:1401px) {
-    .grid-container-index {
-        background-color: #f5c2bc;
-    }
-}
+/*entre 768 y 992*/
