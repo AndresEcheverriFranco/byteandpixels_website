@@ -12,47 +12,29 @@
     padding-left: 50rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .destPort {
     grid-area: destPort;
     width: 86%;
     padding-top: 90rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .imgPort {
     grid-area: imgPort;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery img {
     width: 100%;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .gallery .col-lg-3 {
     padding: 2.5rem;
     margin-left: 4rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .textPort {
     grid-area: textPort;
     margin: 7rem 20rem 0 20rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .subPort {
     grid-area: subPort;
@@ -61,16 +43,9 @@
     padding-left: 10rem;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .footerPort {
-    background-color: rgb(32, 93, 140);
     grid-area: footerPort;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .grid-portfolio {
     margin: 0;
@@ -81,9 +56,6 @@
 }
 
 
-/* @media(min-width:XXX px) {} */
-
-
 /*EFFECTS*/
 
 .gallery-container {
@@ -91,9 +63,6 @@
     padding: 2rem;
     margin-left: 8rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .gallery-container figure {
     position: relative;
@@ -104,48 +73,33 @@
     cursor: pointer;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery-container figure img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery-container figure .layer {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(244, 168, 111, 0.6);
+    background: rgba(116, 110, 105, 0.6);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery-container figure:hover>.layer {
     opacity: 1;
     visibility: visible;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery-container figure:hover>.layer h3 {
     margin-top: 7rem;
     margin-bottom: 1.5rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .gallery-container figure .layer h3 {
     color: #fff;
@@ -154,9 +108,6 @@
     transition: all 500ms ease-out;
     margin-top: 2rem;
 }
-
-
-/* @media(min-width:XXX px) {} */
 
 .gallery-container figure .layer p {
     color: #fff;
@@ -167,12 +118,6 @@
     margin: auto;
 }
 
-
-/* @media(min-width:XXX px) {} */
-
 .gallery-container figure:hover>img {
     transform: scale(1.3);
 }
-
-
-/* @media(min-width:XXX px) {} */
